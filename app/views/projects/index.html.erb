@@ -4,7 +4,7 @@
 	<tr>
 		<th>Name</th>
 	</tr>
-	<% for project in @projects %>
+	<% for project in @projects %> 
 	<tr>
 		<td><%= link_to project.name, project %></td>
 		<td><%= link_to "Edit", edit_project_path(project) %></td>

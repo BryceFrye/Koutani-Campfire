@@ -1,0 +1,25 @@
+#main {
+	padding: 25px;
+	text-align: center;
+	width: 100%;
+	background-color: #E0FFF3;
+}
+
+#nameheader {
+	content: center;
+	border-bottom: solid;
+}
+
+#names {
+	width: 25%;
+}
+
+body {
+	background-color: #FFF0E0;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
