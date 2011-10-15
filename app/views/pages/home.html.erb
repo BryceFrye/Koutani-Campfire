@@ -6,39 +6,47 @@
 	</head>
 	<body>
 		<table id="main" class="round" border="1">
-			<td id="names">
+			<td class="names">
 				<table id="arthur" border="1">
 					<tr>
-						<th id="nameheader">Arthur</th>
+						<th class="nameheader" colspan="4">Arthur</th>
 						<% for project in @projects %> 
 						<tr>
-							<td><%= link_to project.name, project %></td>
-							<td><%= link_to "Edit", edit_project_path(project) %></td>
-							<td><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
-							<td><%= link_to project.user_id, project %></td>
+							<td id="projname"><%= link_to project.name, project %></td>
+							<td id="edit"><%= link_to "Edit", edit_project_path(project) %></td>
+							<td id="destroy"><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
+							<td id="userid"><%= link_to project.user_id, project %></td>
 						</tr>
 						<% end %>
 					</tr>
 				</table>
 			</td>
-			<td id="names">
+			<td class="names">
 				<table id="bryce" border="1">
 					<tr>
-						<th id="nameheader">Bryce</th>
+						<th class="nameheader" colspan="4">Bryce</th>
+						<% for project in @projects %> 
+						<tr>
+							<td id="projname"><%= link_to project.name, project %></td>
+							<td id="edit"><%= link_to "Edit", edit_project_path(project) %></td>
+							<td id="destroy"><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
+							<td id="userid"><%= link_to project.user_id, project %></td>
+						</tr>
+						<% end %>
 					</tr>
 				</table>
 			</td>
-			<td id="names">
+			<td class="names">
 				<table id="derek" border="1">
 					<tr>
-						<th id="nameheader">Derek</th>
+						<th class="nameheader" colspan="4">Derek</th>
 					</tr>
 				</table>
 			</td>
-			<td id="names">
+			<td class="names">
 				<table id="matt" border="1">
 					<tr>
-						<th id="nameheader">Matt</th>
+						<th class="nameheader" colspan="4">Matt</th>
 					</tr>
 				</table>
 			</td>

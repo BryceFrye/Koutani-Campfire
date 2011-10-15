@@ -5,13 +5,33 @@
 	background-color: #E0FFF3;
 }
 
-#nameheader {
+.nameheader {
 	width: 1%;
 	border-bottom: solid;
 }
 
-#names {
+.names {
 	width: 25%;
+}
+
+#projname {
+	text-align: center;
+	width: 60%;
+}
+
+#edit {
+	text-align: left;
+	width: 10%;
+}
+
+#destroy {
+	text-align: left;
+	width: 10%;
+}
+
+#userid {
+	text-align:left;
+	width: 20%;
 }
 
 body {
