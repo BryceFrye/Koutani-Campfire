@@ -1,0 +1,9 @@
+
+<%= form_for @project do |f| %>
+	<%= errors_for(@project, "Unable to add new project").html_safe %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

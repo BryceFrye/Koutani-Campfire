@@ -1,7 +1,14 @@
 source 'http://rubygems.org'
 
 gem 'rails'
+
 gem 'sqlite3', '1.3.4'
+
+gem 'rack', '1.3.3'
+
+gem 'devise'
+gem 'annotate', '2.4.0'
+
 
 group :development do
 	gem 'rspec-rails', '2.6.1'

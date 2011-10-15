@@ -1,5 +1,11 @@
 KoutaniCampfire::Application.routes.draw do
-  match '/home', :to => 'pages#home'
+
+match '/home', :to => 'pages#home'
+
+
+devise_for :users
+resources :users, :projects, :tasks
+root :to => 'projects#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +56,6 @@ KoutaniCampfire::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

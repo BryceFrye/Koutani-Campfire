@@ -5,9 +5,13 @@
 	background-color: #E0FFF3;
 }
 
-#names {
-	width: 25%;
+th {
+	content: center;
 	border-bottom: solid;
+}
+
+td {
+	width: 25%;
 }
 
 body {
