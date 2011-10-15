@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = Project.new(:user_id => current_user.id)
+    @project = Project.new
   end
 
   def create
