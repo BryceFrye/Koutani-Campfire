@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails'
-gem 'sqlite3'
+gem 'sqlite3', '1.3.4'
 
 group :development do
 	gem 'rspec-rails', '2.6.1'
