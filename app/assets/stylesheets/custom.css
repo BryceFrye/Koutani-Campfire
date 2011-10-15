@@ -5,12 +5,12 @@
 	background-color: #E0FFF3;
 }
 
-th {
+#nameheader {
 	content: center;
 	border-bottom: solid;
 }
 
-td {
+#names {
 	width: 25%;
 }
 
