@@ -1,11 +1,10 @@
 KoutaniCampfire::Application.routes.draw do
 
-match '/home', :to => 'pages#home'
 
 
 devise_for :users
 resources :users, :projects, :tasks
-root :to => 'projects#index'
+root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
