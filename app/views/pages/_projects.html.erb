@@ -1,0 +1,10 @@
+<% for project in User.find(userid).projects %> 
+<tr>
+	<td><%= link_to project.name, project %></td>
+	<td><%= link_to "Edit", edit_project_path(project) %></td>
+	<td><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td>
+		<%= link_to project.user_id, project %>
+	</td>
+</tr>
+<% end %>

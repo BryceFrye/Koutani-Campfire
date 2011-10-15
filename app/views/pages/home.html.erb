@@ -9,44 +9,32 @@
 			<td class="names">
 				<table id="arthur" border="1">
 					<tr>
-						<th class="nameheader" colspan="4">Arthur</th>
-						<% for project in @projects %> 
-						<tr>
-							<td id="projname"><%= link_to project.name, project %></td>
-							<td id="edit"><%= link_to "Edit", edit_project_path(project) %></td>
-							<td id="destroy"><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
-							<td id="userid"><%= link_to project.user_id, project %></td>
-						</tr>
-						<% end %>
+						<th id="nameheader">Arthur</th>
+						<%= render :partial => 'projects', :locals => {:userid => 2} %>
 					</tr>
 				</table>
 			</td>
 			<td class="names">
 				<table id="bryce" border="1">
 					<tr>
-						<th class="nameheader" colspan="4">Bryce</th>
-						<% for project in @projects %> 
-						<tr>
-							<td id="projname"><%= link_to project.name, project %></td>
-							<td id="edit"><%= link_to "Edit", edit_project_path(project) %></td>
-							<td id="destroy"><%= link_to "destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
-							<td id="userid"><%= link_to project.user_id, project %></td>
-						</tr>
-						<% end %>
+						<th id="nameheader">Bryce</th>
+						<%= render :partial => 'projects', :locals => {:userid => 3} %>
 					</tr>
 				</table>
 			</td>
 			<td class="names">
 				<table id="derek" border="1">
 					<tr>
-						<th class="nameheader" colspan="4">Derek</th>
+						<th id="nameheader">Derek</th>
+						<%= render :partial => 'projects', :locals => {:userid => 4} %>
 					</tr>
 				</table>
 			</td>
 			<td class="names">
 				<table id="matt" border="1">
 					<tr>
-						<th class="nameheader" colspan="4">Matt</th>
+						<th id="nameheader">Matt</th>
+						<%= render :partial => 'projects', :locals => {:userid => 4} %>
 					</tr>
 				</table>
 			</td>

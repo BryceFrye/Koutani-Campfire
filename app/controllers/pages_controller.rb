@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @projects = Project.find(:all)
+    @projects = Project.all
   end
 
 end
