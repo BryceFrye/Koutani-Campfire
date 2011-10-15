@@ -1,0 +1,15 @@
+<% title "Users" %>
+
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+	<% for user in @users %>
+	<tr>
+		<td><%= link_to user.email, user %></td>
+		<td><%= link_to "Edit", edit_user_path(user) %></td>
+	</tr>
+	<% end %>
+</table>
+
+<p><%= link_to "New Project", new_project_path %></p>
