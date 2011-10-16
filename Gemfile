@@ -8,7 +8,7 @@ gem 'rack', '1.3.3'
 
 gem 'devise'
 gem 'annotate', '2.4.0'
-
+gem 'activerecord-postgresql-adapter'
 
 group :development do
 	gem 'rspec-rails', '2.6.1'
