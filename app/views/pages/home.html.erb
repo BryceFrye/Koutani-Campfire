@@ -2,42 +2,22 @@
 <html>
 	<head>
 		<title>Koutani Campfire</title>
-		<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+		<%= stylesheet_link_tag 'base', :media => 'screen' %>
+		<%= stylesheet_link_tag 'skeleton', :media => 'screen' %>
+		<%= stylesheet_link_tag 'layout', :media => 'screen' %>
 	</head>
 	<body>
-		<table id="main" class="round" border="1">
-			<td class="names">
-				<table id="arthur" border="1">
-					<tr>
-						<th id="nameheader">Arthur</th>
-						<%= render :partial => 'projects', :locals => {:userid => 2} %>
-					</tr>
-				</table>
-			</td>
-			<td class="names">
-				<table id="bryce" border="1">
-					<tr>
-						<th id="nameheader">Bryce</th>
-						<%= render :partial => 'projects', :locals => {:userid => 3} %>
-					</tr>
-				</table>
-			</td>
-			<td class="names">
-				<table id="derek" border="1">
-					<tr>
-						<th id="nameheader">Derek</th>
-						<%= render :partial => 'projects', :locals => {:userid => 4} %>
-					</tr>
-				</table>
-			</td>
-			<td class="names">
-				<table id="matt" border="1">
-					<tr>
-						<th id="nameheader">Matt</th>
-						<%= render :partial => 'projects', :locals => {:userid => 4} %>
-					</tr>
-				</table>
-			</td>
-		</table>
+		<div class="container">
+			<div id="header" class="sixteen columns">
+				<h2>
+					<%= image_tag "koutanilogo.png", :size => "35x35" %>
+					Koutani Campfire
+				</h2>
+			</div>
+			<div id="newproject">
+				<%= render :partial => 'newprojectform' %>
+			</div>
+			<%= render :partial => 'todolist' %>
+		</div>
 	</body>
 </html>

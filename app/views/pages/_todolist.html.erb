@@ -1,0 +1,12 @@
+<% for user in User.all %>
+<div class="four columns">
+	<h3 id="nameheader"><%= user.name %></h3>
+
+	<ul>
+		<% for project in user.projects  %>
+		<li><%= link_to project.name, project %></li>
+		<% end %>
+	</ul>
+
+</div>
+<% end %>

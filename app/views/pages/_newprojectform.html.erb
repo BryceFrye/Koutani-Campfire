@@ -1,0 +1,5 @@
+<% if current_user != nil %>
+<%= form_for Project.new do |f| %>
+ 	<%= f.text_field :name, :width => 300 %>
+<% end %>
+<% end %>
