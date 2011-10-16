@@ -9,6 +9,11 @@ gem 'rack', '1.3.3'
 gem 'devise'
 gem 'annotate', '2.4.0'
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
+
 group :development do
 	gem 'rspec-rails', '2.6.1'
 end
